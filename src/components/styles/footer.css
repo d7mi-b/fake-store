@@ -1,0 +1,54 @@
+.footer {
+    background-image: linear-gradient(60deg, var(--header), var(--hover));
+    padding: 20px;
+    text-align: center;
+    color: var(--button);
+}
+
+.footer .logo {
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+}
+
+.footer .logo p {
+    margin:  5px 15px;
+}
+
+.footer .list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.footer .list a {
+    color: var(--button);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0 10px;
+}
+
+.footer .list a:hover {
+    color: var(--hover);
+    transform: scale(1.05);
+    transition: .2s;
+    display: block;
+}
+
+.footer p a {
+    color: var(--card-background);
+    display: inline-block;
+}
+
+.footer p a:hover {
+    color: var(--hover);
+    transform: scale(1.01);
+    transition: 0.1s;
+}
+
+@media (min-width: 287px) and (max-width: 768px) {
+    .footer .list {
+        flex-direction: column;
+    }
+}

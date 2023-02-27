@@ -1,0 +1,41 @@
+.trusted {
+    background-color: var(--header);
+    padding: 1.2rem 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--card-background);
+}
+
+.trusted .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.trusted .rate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.trusted .rate .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.trusted .rate .rating p:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+@media (min-width: 287px) and (max-width: 768px) {
+    .trusted {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+}

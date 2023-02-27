@@ -1,0 +1,45 @@
+.features {
+    width: 85%;
+    margin: 15px auto;
+}
+
+.features header h1 {
+    font-size: 1.8rem;
+    color: var(--header);
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin: 35px auto 20px;
+}
+
+.features-container .feature svg {
+    background-color: var(--card-background);
+    font-size: 2.5rem;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--button);
+}
+
+.features-container .feature header {
+    color: var(--header);
+}
+
+.features-container .feature p {
+    color: var(--button);
+    font-weight: 300;
+}
+
+@media (min-width: 287px) and (max-width: 768px) {
+    .features-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
